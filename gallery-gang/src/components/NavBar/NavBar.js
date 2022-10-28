@@ -7,16 +7,14 @@ const NavBar = () => {
     return (
         <nav className="nav-container">
         <div className="nav-menu">
-            <button className="btnNav">Inicio</button>
-            <button className="btnNav">Productos</button>
-            <button className="btnNav">Contactos</button>
+            <Link className="btnNav" to={'/category/aros'}>Aros</Link>
+            <Link className="btnNav" to={'/category/collares'}>Collares</Link>
+            <Link className="btnNav" to={'/category/pulseras'}>Pulseras</Link>
         </div>
             <label className="logo">
-                <a href="../index.html">
-                    <Link to='/'>
-                    <img src={logo} alt="Logo GalleryGang"/>
-                    </Link>
-                </a>
+            <Link to='/'>
+                <img src={logo} alt="Logo GalleryGang"/>
+            </Link>
             </label>
         <CartWidget />
     </nav>
